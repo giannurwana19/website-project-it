@@ -29,4 +29,4 @@ function loaderActivetime() {
 
 window.onload = loaderActivetime();
 
-AOS.init({ once: false });
+AOS.init({ once: true });
