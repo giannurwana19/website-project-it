@@ -98,8 +98,44 @@
 /* -header */
 .header {
   width: 100%;
-  height: 200vh;
-  background-color: var(--primary-color);
+  min-height: 100vh;
+  padding-top: 150px;
+  background-color: #111111;
+  opacity: 1;
+  background-image: linear-gradient(#171717 3.5px, transparent 3.5px),
+    linear-gradient(to right, #171717 3.5px, #111111 3.5px);
+  background-size: 70px 70px;
+  /* overflow digunakan ketika ada animasi */
+  overflow: hidden;
+}
+
+.header .header-box .title h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 46px;
+}
+
+.header .header-box .title p {
+  color: var(--text-color-opacity);
+  text-align: center;
+  padding-top: 20px;
+  line-height: 1.8;
+}
+
+.header .header-box .hero-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 100px;
+}
+
+.header .header-box .hero-img img {
+  width: 100%;
+  height: 250px;
+}
+
+.header .header-box .hero-img img:nth-child(2) {
+  scale: 1.2;
 }
 
 @media (max-width: 992px) {
@@ -144,5 +180,46 @@
 
   .navbar .navbar-box .social {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-box .title h1 {
+    font-size: 34px;
+  }
+
+  .header .header-box .title p {
+    font-size: 12px;
+  }
+
+  .header .header-box .hero-img {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .header .header-box .hero-img img:nth-child(2) {
+    scale: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .header-box .title h1 {
+    font-size: 28px;
+  }
+
+  .header .header-box .title p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 475px) {
+  .header .header-box .title h1 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .header .header-box .hero-img img {
+    height: 160px;
   }
 }
