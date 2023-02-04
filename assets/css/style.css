@@ -357,6 +357,95 @@ svg {
   cursor: pointer;
 }
 
+footer {
+  background-color: var(--primary-color);
+  padding: 100px 0;
+  margin-top: -10px;
+}
+
+footer .footer-box {
+  display: grid;
+  grid-template-columns: 500px 100px 200px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .footer-box .box:nth-child(1) div {
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-box .box:nth-child(1) div i {
+  color: var(--text-color);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer .footer-box .box:nth-child(1) div h2 {
+  color: var(--text-color);
+}
+
+footer .footer-box .box:nth-child(1) p {
+  color: var(--text-color-opacity);
+  line-height: 1.5;
+}
+
+footer .footer-box .box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-box .box:nth-child(2) a {
+  color: var(--text-color-opacity);
+  text-decoration: none;
+}
+
+footer .footer-box .box:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-box .box:nth-child(3) a {
+  color: var(--text-color-opacity);
+  text-decoration: none;
+}
+
+footer .footer-box .box a:hover {
+  color: var(--text-color);
+}
+
+.copyright {
+  padding: 50px 0;
+  background-color: var(--primary-color);
+  margin-top: -10px;
+}
+
+.copyright .copy-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright .copy-box p {
+  color: var(--text-color-opacity);
+  line-height: 1.7;
+}
+
+.copyright .copy-box i {
+  color: var(--text-color-opacity);
+  font-size: 26px;
+}
+
+.copyright .copy-box .social-footer .fa-brands:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.copyright .copy-box .social-footer .fa-twitter {
+  margin-inline: 10px;
+}
+
 @media (max-width: 992px) {
   .navbar.nav-scroll-active {
     backdrop-filter: none;
@@ -412,6 +501,11 @@ svg {
   .services .services-box .boxes .boxs:nth-child(2) .desc {
     order: 2;
   }
+
+  footer .footer-box {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -449,6 +543,11 @@ svg {
   .contact .contact-box .box p {
     font-size: 15px;
     width: 90%;
+  }
+
+  .copyright .copy-box {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -515,5 +614,9 @@ svg {
 
   .services .services-box .boxes .boxs {
     gap: 30px;
+  }
+
+  footer .footer-box .box:nth-child(1) p {
+    font-size: 14px;
   }
 }
