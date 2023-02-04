@@ -290,6 +290,73 @@ svg {
   color: var(--text-color);
 }
 
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.contact .contact-box .box {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact .contact-box .box .fa-star {
+  color: goldenrod;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.contact .contact-box .box h1 {
+  font-weight: 800;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.contact .contact-box .box p {
+  color: var(--text-color-opacity);
+  width: 70%;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.contact .contact-box .form-contact form table {
+  margin-inline: auto;
+}
+
+.contact .contact-box .form-contact form table tr td input,
+.contact .contact-box .form-contact form table tr td textarea {
+  padding: 15px;
+  font-style: 16px;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact .contact-box .form-contact form table tr td input:focus,
+.contact .contact-box .form-contact form table tr td textarea:focus {
+  background-color: var(--secondary-color);
+}
+
+.contact .contact-box .form-contact form table tr:nth-child(1) td:nth-child(1) {
+  padding-right: 5px;
+}
+
+.contact .contact-box .form-contact form table tr:nth-child(1) td:nth-child(2) {
+  padding-left: 5px;
+}
+
+.contact .contact-box .form-contact form table tr td button {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media (max-width: 992px) {
   .navbar.nav-scroll-active {
     backdrop-filter: none;
@@ -378,6 +445,11 @@ svg {
   .services .services-box .boxes .boxs img {
     height: 300px;
   }
+
+  .contact .contact-box .box p {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -395,6 +467,10 @@ svg {
 
   .partners {
     padding-bottom: 50px;
+  }
+
+  .contact .contact-box .box p {
+    font-size: 12px;
   }
 }
 
